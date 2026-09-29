@@ -1,1 +1,6 @@
-const m=document.querySelector('.menu'),n=document.querySelector('#nav');m.addEventListener('click',()=>n.classList.toggle('open'));document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>n.classList.remove('open')));const t=document.querySelector('.toast');document.querySelectorAll('[data-coming]').forEach(b=>b.addEventListener('click',()=>{t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}));
+const menu=document.querySelector('.menu');
+const nav=document.querySelector('#nav');
+function setMenu(open){nav.classList.toggle('open',open);document.body.classList.toggle('menu-open',open);menu.setAttribute('aria-expanded',String(open));menu.querySelector('span').textContent=open?'×':'☰';}
+menu.addEventListener('click',()=>setMenu(!nav.classList.contains('open')));
+document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
