@@ -1,3 +1,4 @@
 # BLINKEARS Website
+Official GitHub Pages website for BLINKEARS — family comedy concept.
 
-GitHub Pages-ready flat package. Upload every file in this folder to the repository root. All CSS, JS and image references are root-relative filenames to avoid nested-folder upload issues. Custom domain: blinkears.com.
+Upload every file in this folder directly to the repository root. Do not upload the ZIP itself.
