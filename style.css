@@ -344,7 +344,7 @@ ul{list-style:none;margin:0;padding:0}
   body{font-size:17px}
   .wordmark{font-size:22px}
   .menu-button{display:block}
-  .site-nav{position:fixed;top:var(--header);left:0;right:0;bottom:0;margin:0;padding:18px 20px 40px;background:rgba(20,13,8,.98);flex-direction:column;align-items:stretch;gap:0;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .25s,transform .25s var(--ease),visibility 0s .25s}
+  .site-nav{position:absolute;top:100%;left:0;right:0;height:calc(100vh - var(--header));height:calc(100dvh - var(--header));overflow-y:auto;margin:0;padding:18px 20px 40px;background:#140d08;box-shadow:0 20px 40px rgba(0,0,0,.4);flex-direction:column;align-items:stretch;gap:0;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .25s,transform .25s var(--ease),visibility 0s .25s}
   .site-nav.open{opacity:1;visibility:visible;transform:none;transition:opacity .25s,transform .25s var(--ease)}
   .site-nav a{padding:18px 4px;border-radius:0;border-bottom:1px solid var(--line-dark);font-family:var(--display);font-weight:600;font-size:28px}
   .site-nav a.nav-cta{margin:24px 0 0;text-align:center;border-radius:999px;border:0;font-size:20px}
