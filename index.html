@@ -31,7 +31,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap">
 <link rel="preload" as="image" href="poster-wide.webp" media="(min-width: 721px)">
 <link rel="preload" as="image" href="poster-vertical.webp" media="(max-width: 720px)">
-<link rel="stylesheet" href="style.css?v=16">
+<link rel="stylesheet" href="style.css?v=17">
 
 <script type="application/ld+json">
 {
@@ -62,6 +62,7 @@
     <span class="wm-glow" aria-hidden="true"></span>BLINKEARS
   </a>
   <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+    <a href="#watch">Watch</a>
     <a href="#family">Family</a>
     <a href="#shorts">Shorts</a>
     <a href="#world">Their World</a>
@@ -99,7 +100,7 @@
       <p class="hero-text">Rumba, Samba, Siko and Niki are the Blinkears. Their days begin like everyone else’s. They just rarely end that way.</p>
       <div class="hero-actions">
         <a class="button primary" href="#family">Meet the Blinkears <span aria-hidden="true">→</span></a>
-        <a class="button ghost" href="#shorts"><span class="play" aria-hidden="true"></span>30-second shorts</a>
+        <a class="button ghost" href="#watch"><span class="play" aria-hidden="true"></span>Watch the intro</a>
       </div>
     </div>
   </div>
@@ -112,6 +113,25 @@
     <span>Family comedy</span><i></i><span>30-second shorts</span><i></i><span>Visual humor</span><i></i><span>Rumba</span><i></i><span>Samba</span><i></i><span>Siko</span><i></i><span>Niki</span><i></i>
   </div>
 </div>
+
+<!-- WATCH -->
+<section id="watch" class="watch-section" aria-labelledby="watch-title">
+  <div class="fireflies" aria-hidden="true"></div>
+  <div class="wrap watch-grid">
+    <div class="watch-copy">
+      <p class="kicker light reveal">Now playing</p>
+      <h2 id="watch-title" class="reveal">Meet the<br><span class="glow-text">Blinkears.</span></h2>
+      <p class="reveal">You caught them at a bad moment. They’d like to make a good first impression. It’s going great.</p>
+      <p class="watch-meta reveal"><span>00:30</span><span>Episode 00 · The Introduction</span></p>
+    </div>
+    <div class="phone reveal">
+      <video class="watch-video" controls playsinline preload="none" poster="meet-the-blinkears-poster.jpg" width="480" height="854">
+        <source src="meet-the-blinkears.mp4" type="video/mp4">
+      </video>
+      <button class="play-overlay" type="button" aria-label="Play Meet the Blinkears"><span></span></button>
+    </div>
+  </div>
+</section>
 
 <!-- STATEMENT -->
 <section class="statement">
@@ -354,6 +374,6 @@
   </div>
 </dialog>
 <div class="toast" role="status" aria-live="polite"></div>
-<script src="app.js?v=16" defer></script>
+<script src="app.js?v=17" defer></script>
 </body>
 </html>

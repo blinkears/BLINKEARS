@@ -169,6 +169,15 @@
     });
   }
 
+  /* Intro video */
+  document.querySelectorAll('.phone').forEach(function (ph) {
+    var v = ph.querySelector('video'), b = ph.querySelector('.play-overlay');
+    if (!v || !b) return;
+    b.addEventListener('click', function () { v.play(); });
+    v.addEventListener('play', function () { ph.classList.add('playing'); });
+    v.addEventListener('ended', function () { ph.classList.remove('playing'); });
+  });
+
   /* Footer year */
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
