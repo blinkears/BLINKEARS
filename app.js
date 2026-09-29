@@ -121,8 +121,8 @@
     var show = function (i) {
       cur = (i + cards.length) % cards.length;
       var c = cards[cur];
-      src.srcset = 'assets/card-' + c[0] + '.webp';
-      img.src = 'assets/card-' + c[0] + '.jpg';
+      src.srcset = 'card-' + c[0] + '.webp';
+      img.src = 'card-' + c[0] + '.jpg';
       img.alt = c[1] + ' — BLINKEARS character card';
       cap.textContent = c[1] + '  ·  ' + (cur + 1) + ' / ' + cards.length;
     };
@@ -157,14 +157,14 @@
     });
     // preload the other cards after the page is idle
     window.addEventListener('load', function () {
-      setTimeout(function () { cards.forEach(function (c) { var p = new Image(); p.src = 'assets/card-' + c[0] + '.webp'; }); }, 2500);
+      setTimeout(function () { cards.forEach(function (c) { var p = new Image(); p.src = 'card-' + c[0] + '.webp'; }); }, 2500);
     });
   } else if (dlg) {
     // very old browsers: open the poster directly
     document.querySelectorAll('[data-card]').forEach(function (b) {
       b.addEventListener('click', function () {
         var n = ['rumba', 'samba', 'siko', 'niki'][parseInt(b.getAttribute('data-card'), 10)];
-        window.open('assets/card-' + n + '.jpg', '_blank');
+        window.open('card-' + n + '.jpg', '_blank');
       });
     });
   }
