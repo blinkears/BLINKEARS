@@ -418,3 +418,15 @@ ul{list-style:none;margin:0;padding:0}
   .js .reveal{opacity:1;transform:none}
   .firefly{opacity:.8}
 }
+
+/* ---------- Social links ---------- */
+.socials{display:flex;gap:10px}
+.socials a{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;color:#c2b3a6;box-shadow:inset 0 0 0 1.5px #3c2b20;transition:color .2s,box-shadow .2s,transform .2s var(--ease)}
+.socials a:hover,.socials a:focus-visible{color:var(--glow);box-shadow:inset 0 0 0 1.5px var(--glow);transform:translateY(-2px)}
+.socials svg,.follow-link svg{fill:currentColor}
+.watch-follow{margin-top:34px}
+.watch-follow>p{font-size:13px!important;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--glow)!important;margin-bottom:12px}
+.follow-links{display:flex;flex-wrap:wrap;gap:10px}
+.follow-link{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;color:#fff;text-decoration:none;font-weight:800;font-size:15px;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.3);transition:background .2s,box-shadow .2s,transform .2s var(--ease)}
+.follow-link:hover,.follow-link:focus-visible{background:rgba(255,200,97,.12);box-shadow:inset 0 0 0 1.5px var(--glow);transform:translateY(-2px)}
+@media (max-width:900px){.follow-links{justify-content:center}}
